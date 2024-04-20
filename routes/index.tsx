@@ -37,7 +37,7 @@ export default function Home(props: PageProps<ProductType[]>) {
         />
       </Head>
       <section
-        class="container flex md:flex-col justify-center min-h-[calc(100vh_-_72px)]"
+        class="container flex flex-col justify-center min-h-[calc(100vh_-_72px)]"
         id="home"
       >
         <div class="flex justify-center items-center">
