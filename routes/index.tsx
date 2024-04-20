@@ -37,7 +37,7 @@ export default function Home(props: PageProps<ProductType[]>) {
         />
       </Head>
       <section
-        class="container flex flex-col justify-center min-h-[calc(100vh_-_72px)]"
+        class="container flex md:flex-col justify-center min-h-[calc(100vh_-_72px)]"
         id="home"
       >
         <div class="flex justify-center items-center">
@@ -71,7 +71,12 @@ export default function Home(props: PageProps<ProductType[]>) {
             </div>
           </div>
         </div>
-        <div class="flex w-full overflow-x-auto scroll-smooth gap-4 pt-8">
+        <div
+          class="flex w-full overflow-x-auto scroll-smooth gap-4 pt-8"
+          style="
+          -ms-overflow-style: none;
+          scrollbar-width: none;"
+        >
           <div class="bg-[#eee] p-2 min-w-[336px]">
             <figure class="w-max mx-auto">
               <Image
