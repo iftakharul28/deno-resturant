@@ -6,7 +6,7 @@ export default function Header() {
           class="text-4xl relative font-semibold after:absolute after:top-2/4 after:-right-5 after:-translate-x-2/4 after:w-3 after:h-3 after:bg-[#ff9302] after:rounded-full"
           href="/"
         >
-          Pizza
+          Foodie
         </a>
         <button
           class="navbar-toggler"
@@ -14,11 +14,8 @@ export default function Header() {
         >
           <i class="fa-solid fa-bars menu-btn"></i>
         </button>
-        <div class="flex items-center flex-1" id="navbarNav">
-          <div class="flex mx-auto ">
-            <a class="px-2 py-1.5 active:bg-[#ff9302]" href="#home">
-              home
-            </a>
+        <div class="hidden md:flex items-center flex-1" id="navbarNav">
+          <div class="flex mx-auto">
             <a class="px-2 py-1.5 active:bg-[#ff9302]" href="#about">
               about
             </a>
@@ -27,9 +24,6 @@ export default function Header() {
             </a>
             <a class="px-2 py-1.5 active:bg-[#ff9302]" href="#menu">
               menu
-            </a>
-            <a class="px-2 py-1.5 active:bg-[#ff9302]" href="#careers">
-              careers
             </a>
             <a class="px-2 py-1.5 active:bg-[#ff9302]" href="#contact">
               contact

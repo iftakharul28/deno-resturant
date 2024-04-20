@@ -37,16 +37,16 @@ export default function Home(props: PageProps<ProductType[]>) {
         />
       </Head>
       <section
-        class="container flex flex-col min-h-[calc(100vh_-_72px)]"
+        class="container flex flex-col justify-center min-h-[calc(100vh_-_72px)]"
         id="home"
       >
         <div class="flex justify-center items-center">
-          <div class="md:flex-[0_0_auto] md:w-2/4 pr-3">
-            <div class="home__info text-lg-start mb-5 mb-lg-0">
-              <h1 class="text-6xl capitalize font-bold text-[#232323] leading-tight">
+          <div class="md:flex-[0_0_auto] md:w-2/4 md:pr-3">
+            <div class="home__info md:mb-5">
+              <h1 class="text-3xl sm:text-4xl lg:text-6xl capitalize font-bold text-[#232323] lg:leading-snug leading-tight">
                 A healthy meal <br /> delivered to your door.
               </h1>
-              <p class="capitalize text-base leading-8 text-[#232323] my-4 max-w-[80%]">
+              <p class="capitalize text-base leading-8 text-[#232323] my-4 md:max-w-[80%]">
                 the food places is a neighborhood restaurant serving seasonal
                 global cuisine driven by the faire
               </p>
@@ -58,7 +58,7 @@ export default function Home(props: PageProps<ProductType[]>) {
               </a>
             </div>
           </div>
-          <div class="md:flex-[0_0_auto] md:w-2/4 pl-3">
+          <div class="hidden md:block md:flex-[0_0_auto] md:w-2/4 md:pl-3">
             <div class="home__image">
               <Image
                 class="img-fluid"
@@ -71,8 +71,8 @@ export default function Home(props: PageProps<ProductType[]>) {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-4 pb-8 pt-4 mt-auto gap-4">
-          <div class="bg-[#eee]">
+        <div class="flex w-full overflow-x-auto scroll-smooth gap-4 pt-8">
+          <div class="bg-[#eee] p-2 min-w-[336px]">
             <figure class="w-max mx-auto">
               <Image
                 class="h-full w-full"
@@ -117,9 +117,9 @@ export default function Home(props: PageProps<ProductType[]>) {
                 icon_type="half"
               />
             </div>
-            <p class="text-center pb-2 font-medium text-lg">$20.00</p>
+            <p class="text-center font-medium text-lg">$20.00</p>
           </div>
-          <div class="bg-[#eee]">
+          <div class="bg-[#eee] p-2 min-w-[336px]">
             <figure class="w-max mx-auto">
               <Image
                 class="h-full w-full"
@@ -164,9 +164,9 @@ export default function Home(props: PageProps<ProductType[]>) {
                 icon_type="half"
               />
             </div>
-            <p class="text-center pb-2 font-medium text-lg">$20.00</p>
+            <p class="text-center font-medium text-lg">$20.00</p>
           </div>
-          <div class="bg-[#eee]">
+          <div class="bg-[#eee] p-2 min-w-[336px]">
             <figure class="w-max mx-auto">
               <Image
                 class="h-full w-full"
@@ -211,9 +211,9 @@ export default function Home(props: PageProps<ProductType[]>) {
                 icon_type="half"
               />
             </div>
-            <p class="text-center pb-2 font-medium text-lg">$20.00</p>
+            <p class="text-center font-medium text-lg">$20.00</p>
           </div>
-          <div class="bg-[#eee]">
+          <div class="bg-[#eee] p-2 min-w-[336px]">
             <figure class="w-max mx-auto">
               <Image
                 class="h-full w-full"
@@ -258,14 +258,14 @@ export default function Home(props: PageProps<ProductType[]>) {
                 icon_type="half"
               />
             </div>
-            <p class="text-center pb-2 font-medium text-lg">$20.00</p>
+            <p class="text-center font-medium text-lg">$20.00</p>
           </div>
         </div>
       </section>
       <section class="py-14 bg-[#f9f6f0]">
         <div class="container">
-          <div class=" grid grid-cols-4 gap-2.5">
-            <div class="max-h-[426px] col-[1_/_3] row-[1_/_3] relative text-white group overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-2.5">
+            <div class="md:col-[1_/_3] md:row-[1_/_3] max-h-[426px] relative text-white group overflow-hidden">
               <Image
                 src="./banner/banner-1.jpg"
                 width="550"
@@ -276,10 +276,10 @@ export default function Home(props: PageProps<ProductType[]>) {
               />
               <div class="absolute inset-0 flex items-center">
                 <div class="p-4">
-                  <p class=" text-3xl font-semibold drop-shadow-md">
+                  <p class="text-xl lg:text-3xl font-semibold drop-shadow-md">
                     50% Off Now!
                   </p>
-                  <h3 class="text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
+                  <h3 class="text-2xl lg:text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
                     Discount For Delicious Tasty Burgers!
                   </h3>
                   <p class="capitalize text-base leading-8 my-2.5 drop-shadow-md">
@@ -305,7 +305,7 @@ export default function Home(props: PageProps<ProductType[]>) {
               />
               <div class="absolute inset-0 flex items-center">
                 <div class="p-4">
-                  <h3 class="text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
+                  <h3 class="text-2xl lg:text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
                     Delicious Pizza
                   </h3>
                   <p class="capitalize text-base leading-8 my-2.5 drop-shadow-md">
@@ -331,7 +331,7 @@ export default function Home(props: PageProps<ProductType[]>) {
               />
               <div class="absolute inset-0 flex items-center">
                 <div class="p-4">
-                  <h3 class="text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
+                  <h3 class="text-2xl lg:text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
                     American Burgers
                   </h3>
                   <p class="capitalize text-base leading-8 my-2.5 drop-shadow-md">
@@ -346,18 +346,18 @@ export default function Home(props: PageProps<ProductType[]>) {
                 </div>
               </div>
             </div>
-            <div class="col-[3_/_5] row-[2_/_3] max-h-52 relative text-white group overflow-hidden">
+            <div class="md:col-[3_/_5] md:row-[2_/_3] max-h-52  relative text-white group overflow-hidden">
               <Image
                 src="./banner/banner-4.jpg"
                 width="550"
                 height="220"
                 loading="lazy"
                 alt="Tasty Buzzed Pizza"
-                class="h-full w-full object-cover group-[:hover]:scale-105 duration-300 ease-in-out"
+                class="h-52 md:h-full w-full object-cover group-[:hover]:scale-105 duration-300 ease-in-out"
               />
               <div class="absolute inset-0 flex items-center justify-end">
                 <div class="p-4">
-                  <h3 class="text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
+                  <h3 class="text-2xl lg:text-4xl font-bold my-2.5 max-w-[70%] drop-shadow-md">
                     Tasty Buzzed Pizza
                   </h3>
                   <p class="capitalize text-base leading-8 my-2.5 drop-shadow-md">
@@ -380,13 +380,13 @@ export default function Home(props: PageProps<ProductType[]>) {
           class="home__banner"
           style="background-image: url('./hero-bg.jpg')"
         >
-          <div class="container grid grid-cols-2 items-center gap-8 ">
-            <div class=" text-left text-white">
-              <h2 class="text-4xl  font-semibold max-w-[510px]">
+          <div class="container grid md:grid-cols-2 items-center gap-8 ">
+            <div class="text-white text-center md:text-left">
+              <h2 class="text-3xl md:text-4xl font-semibold max-w-[510px]">
                 The Foodie Have Excellent Of{" "}
                 <span class="text-[#ff9302]">Quality Burgers!</span>
               </h2>
-              <p class="capitalize text-base leading-8 my-4">
+              <p class="capitalize text-sm md:text-base leading-8 my-4">
                 The restaurants in Hangzhou also catered to many northern
                 Chinese who had fled south from Kaifeng during the Jurchen
                 invasion of the 1120s, while it is also known that many
@@ -417,7 +417,7 @@ export default function Home(props: PageProps<ProductType[]>) {
                   height="226"
                   loading="lazy"
                   alt="get up to 50% off now"
-                  class="abs-img scale-up-anim"
+                  class="w-44 md:max-w-56 scale-up-anim"
                 />
               </figure>
             </div>
@@ -436,7 +436,7 @@ export default function Home(props: PageProps<ProductType[]>) {
             Food is any substance consumed to provide nutritional support for an
             organism.
           </p>
-          <div class="flex justify-center gap-3">
+          <div class="flex justify-center flex-wrap gap-3">
             <button class="bg-[#ff9302] capitalize text-white rounded-md px-3.5 py-1.5  active">
               All
             </button>
@@ -453,7 +453,7 @@ export default function Home(props: PageProps<ProductType[]>) {
               Sandwich
             </button>
           </div>
-          <div class="grid grid-cols-3 items-center justify-center gap-5">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 mt-6">
             <div class="bg-white p-10">
               <div class=" w-max mx-auto">
                 <Image
@@ -818,13 +818,12 @@ export default function Home(props: PageProps<ProductType[]>) {
           </div>
         </div>
       </section>
-
       <section class="py-12 bg-[#f9f6f0]">
         <h2 class="text-[#212529] text-3xl text-center capitalize font-bold mb-4">
           about us
         </h2>
         <div class="container">
-          <div class="flex justify-center items-center">
+          <div class="flex justify-center flex-col-reverse md:flex-row items-center">
             <div class="md:flex-[0_0_auto] md:w-2/4 pr-3">
               <Image
                 class="img-fluid"
@@ -839,11 +838,11 @@ export default function Home(props: PageProps<ProductType[]>) {
                 <span class="text-[#ff9302] text-sm font-semibold capitalize">
                   Why Choose Us?
                 </span>
-                <h2 class="my-3 text-7xl capitalize font-bold text-[#232323] leading-tight">
+                <h2 class="my-3 text-4xl md:text-7xl capitalize font-bold text-[#232323] leading-tight">
                   What's Make Our Food <br />
                   Delicious!
                 </h2>
-                <p class="capitalize text-base leading-8 text-[#232323] mb-4">
+                <p class="capitalize text-sm md:text-base leading-8 text-[#232323] mb-4">
                   Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eos
                   Ut Explicabo, Numquam Iusto Est A Ipsum Assumenda Tempore Esse
                   Corporis?
