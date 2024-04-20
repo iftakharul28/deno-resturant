@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+.home__banner{
+  @apply  bg-[#f9f6f0] relative text-center overflow-hidden bg-cover bg-no-repeat bg-center;
+  padding: 40px 0;
+}
+.home__banner::after{
+  background-image: url("./shape-white.png");
+}
+.home__banner::before{
+  @apply bottom-auto top-0;
+  background-image: url("./shape-grey.png");
+  transform: scaleY(-1);
+}
+.home__banner::before, .home__banner::after{
+  @apply absolute bottom-0 left-0 w-full h-4;
+  content: "";
+  background-repeat: repeat no-repeat;
+  background-position: bottom;
+}
+.home__banner-img{
+  transform: scale(1.1) translate(20px, 40px);
+}
+.home__banner-icon { animation: scaleUp 1s linear infinite alternate; }
+
+@keyframes scaleUp {
+  0% { transform: scale(1);}
+  100% { transform: scale(1.05); }
+}
